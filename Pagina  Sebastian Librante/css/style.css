@@ -1,0 +1,320 @@
+*{  
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Prompt', sans-serif;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px; 
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #ffffffe1;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width:  100%;
+    height: 600px;
+    background-image: url(../Imagenes/logo/11.png);
+    background: #0059a7a9;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffde475, #0059a78c);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffde44f, #0059a765), url(../Imagenes/Fotos/collar\ anclachico.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    }
+
+   
+nav{
+    text-align:  right;
+    padding: 30px 50px 0 0;
+
+}
+
+nav > a {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover {
+
+    text-decoration: underline;
+
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.textos-header h2{
+    font-size: 45px;
+    font-weight: 500;
+    color: #092530;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 60%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 60%;
+    color: #ffffff;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #0a3b57;
+    color: #f6a326;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    box-shadow: 0 0 6px 0 rgba(161, 161, 161, 0.87);
+    margin-right: 15px;  
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Galeria */
+
+.accesorios{
+    background: rgba(204, 199, 185, 0.904);
+}
+
+.galeria-accesorios{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-accesorios{
+    width: 30%;
+    margin-bottom: 20px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0  rgba(161, 161, 161, 0.87);  
+}
+
+.imagen-accesorios> img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .5s;
+}
+
+.exp-img{
+    width: 100%;
+    height: 100vh;
+    background-color: #092530c0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.exp-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+    
+.exp-img img{
+    width: 100%;
+    max-width: 600px;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0); 
+    background: #fb8600d0;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 60px;
+}
+
+.hover-galeria p{
+    color: #ffffff;
+}
+
+.imagen-accesorios:hover .hover-galeria{
+    transform: scale(1.2);
+}
+
+/* clientes */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #023047;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0  rgba(161, 161, 161, 0.87);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #f6a326;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #f2f2f2;
+}
+
+.cards .cards > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/* Our team */
+
+.about-services{
+    background: #023047;
+    padding-bottom: 30px;
+    box-shadow: 0 0 6px 0  rgba(161, 161, 161, 0.87);
+}
+
+.asesoramiento-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.asesoramiento-ind{
+    width: 28%;
+    text-align: center;
+    color: #f6a326
+}
+
+.asesoramiento-ind img{
+    width: 250px;
+}
+
+.asesoramiento-ind h3{
+    margin: 10px 0;
+}
+
+.asesoramiento-ind p{
+    font-weight: 300;
+    text-align: justify;
+    color: #ffffff;  
+}
+
+/* footer */    
+
+footer{
+    background:  #002446;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(0, 55, 100);
+}
+
+.contenedor-footer{
+    text-align: center;
+}
+
+.contenedor-footer h4{
+    color: #f6a326;
+    border-bottom: 3px solid rgb(0, 55, 100);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contenedor-footer p{
+    color: #f6a326;  
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0 0 0;
+    color: rgb(10, 95, 165);
+}
